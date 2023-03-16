@@ -286,19 +286,19 @@ do
     --
     Utility.SaveConfig = function(Config)
         writefile(
-            "Abyss/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json", 
+            "Premium +/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json", 
             HttpService:JSONEncode(UISettings.Flags)
         )
     end
     --
     Utility.DeleteConfig = function(Config)
         delfile(
-            "Abyss/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json"
+            "Premium +/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json"
         )
     end
     --
     Utility.LoadConfig = function(Config)
-        local Config = HttpService:JSONDecode(readfile("Abyss/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json"))
+        local Config = HttpService:JSONDecode(readfile("Premium +/Configs/" .. tostring(game.PlaceId) .. "/" .. Config .. ".json"))
         --
         Library.Flags = LoadedConfig
         --
@@ -348,7 +348,7 @@ do
             Max = 2, Current = 0
         }
         --
-        Library.Theme.Logo = Utility.AddImage("Abyss/Assets/UI/Logo2.png", "https://i.imgur.com/UQpQVno.png")
+        Library.Theme.Logo = Utility.AddImage("Premium +/Assets/UI/Logo2.png", "https://i.imgur.com/UQpQVno.png")
         --
         local WindowOutline = Utility.AddDrawing("Square", {
             Size = WindowSize,
@@ -481,11 +481,10 @@ do
         Utility.AddFolder("Premium +/Configs")
         Utility.AddFolder("Premium +/Scripts")
         --
-        Library.Theme.Gradient = Utility.AddImage("Abyss/Assets/UI/Gradient.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/Gradient.png")
-        -- Library.Theme.SecondIcon = Utility.AddImage("Abyss/Assets/UI/Gradient.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/Gradient.png")
-        Library.Theme.Hue = Utility.AddImage("Abyss/Assets/UI/Hue.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/HuePicker.png")
-        Library.Theme.Saturation = Utility.AddImage("Abyss/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
-        Library.Theme.SaturationCursor = Utility.AddImage("Abyss/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
+        Library.Theme.Gradient = Utility.AddImage("Premium +/Assets/UI/Gradient.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/Gradient.png")
+        Library.Theme.Hue = Utility.AddImage("Premium +/Assets/UI/Hue.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/HuePicker.png")
+        Library.Theme.Saturation = Utility.AddImage("Premium +/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
+        Library.Theme.SaturationCursor = Utility.AddImage("Premium +/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
         --
         Window.SetText(1, "Checking Assets")
         wait(0.2)

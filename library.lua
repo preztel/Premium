@@ -348,7 +348,7 @@ do
             Max = 2, Current = 0
         }
         --
-        Library.Theme.Logo = Utility.AddImage("Abyss/Assets/UI/Logo2.png", "https://i.imgur.com/HI4UTmZ.png")
+        Library.Theme.Logo = Utility.AddImage("Abyss/Assets/UI/Logo2.png", "https://i.imgur.com/UQpQVno.png")
         --
         local WindowOutline = Utility.AddDrawing("Square", {
             Size = WindowSize,
@@ -474,12 +474,12 @@ do
         --
         Window.SetText(0, "UI Initialization [ Downloading ]")
         --
-        Utility.AddFolder("Abyss")
-        Utility.AddFolder("Abyss/Caches")
-        Utility.AddFolder("Abyss/Assets")
-        Utility.AddFolder("Abyss/Assets/UI")
-        Utility.AddFolder("Abyss/Configs")
-        Utility.AddFolder("Abyss/Scripts")
+        Utility.AddFolder("Premium +")
+        Utility.AddFolder("Premium +/Caches")
+        Utility.AddFolder("Premium +/Assets")
+        Utility.AddFolder("Premium +/Assets/UI")
+        Utility.AddFolder("Premium +/Configs")
+        Utility.AddFolder("Premium +/Scripts")
         --
         Library.Theme.Gradient = Utility.AddImage("Abyss/Assets/UI/Gradient.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/Gradient.png")
         -- Library.Theme.SecondIcon = Utility.AddImage("Abyss/Assets/UI/Gradient.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/Gradient.png")
@@ -487,18 +487,18 @@ do
         Library.Theme.Saturation = Utility.AddImage("Abyss/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
         Library.Theme.SaturationCursor = Utility.AddImage("Abyss/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
         --
-        Library.Theme.Astolfo = Utility.AddImage("Abyss/Assets/UI/Astolfo.png", "https://i.imgur.com/T20cWY9.png")
-        Library.Theme.Aiko = Utility.AddImage("Abyss/Assets/UI/Aiko.png", "https://i.imgur.com/1gRIdko.png")
-        Library.Theme.Rem = Utility.AddImage("Abyss/Assets/UI/Rem.png", "https://i.imgur.com/ykbRkhJ.png")
-        Library.Theme.Violet = Utility.AddImage("Abyss/Assets/UI/Violet.png", "https://i.imgur.com/7B56w4a.png")
-        Library.Theme.Asuka = Utility.AddImage("Abyss/Assets/UI/Asuka.png", "https://i.imgur.com/3hwztNM.png")
-        --
         Window.SetText(1, "Checking Assets")
+        wait(0.2)
+        --
+        Window.SetText(1, "Checking Caches")
+        wait(0.2)
         --
         Window.SetText(1, "Checking Input")
         Utility.CLCheck(Window)
+        wait(0.2)
         --
         Window.SetText(2, "Finished")
+        wait(0.2)
         --
         Utility.RemoveDrawing(WindowOutline)
         Utility.RemoveDrawing(WindowOutlineBorder)
